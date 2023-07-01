@@ -2,7 +2,7 @@ import background from "../assets/background.jpg";
 
 const Header = () => {
   return (
-    <div className="flex flex-col h-screen">
+    <div className="flex flex-col h-screen font-[Montserrat] ">
       <img
         className="absolute w-full h-full object-cover filter brightness-75 -z-10"
         src={background}
@@ -52,8 +52,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="px-[25px] py-[13px] bg-sky-900 bg-opacity-70 rounded justify-start items-start gap-2.5 flex">
-          <div className="text-white text-[13px] font-semibold">Newsletter</div>
+        <button className="px-[25px] py-[13px] bg-sky-900 bg-opacity-70 rounded justify-start items-start gap-2.5 flex ">
+          <div className="text-white text-[13px] font-[Open Sans] font-semibold">Newsletter</div>
         </button>
       </nav>
 
