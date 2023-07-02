@@ -2,6 +2,20 @@ import featuredContent from "../data/featuredContent";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const FeaturedContent = () => {
+  const breakpoints = {
+    475: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  };
   return (
     <div className="font-[Montserrat] h-screen p-20 ">
       <h2 className="text-sky-900 text-[24px] font-bold">FeaturedContent</h2>
@@ -9,7 +23,7 @@ const FeaturedContent = () => {
       <div className="flex justify-between items-center my-4">
         <Swiper
           spaceBetween={30}
-          slidesPerView={4}
+          breakpoints={breakpoints}
           navigation
           loop={true}
           onSlideChange={() => console.log("slide change")}
