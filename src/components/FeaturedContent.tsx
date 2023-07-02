@@ -1,5 +1,6 @@
 import featuredContent from "../data/featuredContent";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
 import "swiper/css";
 const FeaturedContent = () => {
   const breakpoints = {
@@ -22,12 +23,10 @@ const FeaturedContent = () => {
 
       <div className="flex justify-between items-center my-4">
         <Swiper
-          spaceBetween={30}
+          spaceBetween={100}
           breakpoints={breakpoints}
-          navigation
+          navigation={true}
           loop={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           {featuredContent.map((item) => (
             <SwiperSlide key={item.id}>
