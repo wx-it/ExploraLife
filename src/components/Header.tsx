@@ -1,18 +1,27 @@
 import background from "/images/background.jpg";
-
+import { FiMenu } from "react-icons/fi";
 const Header = () => {
   return (
     <div className="flex flex-col h-screen font-[Montserrat] ">
       <img
-        className="absolute w-full h-full object-cover filter brightness-75 -z-10"
+        className="absolute w-full h-full object-cover filter brightness-75 -z-10 sm:border sm:border-red-500"
         src={background}
         alt=""
       />
-      <nav className="w-full px-12 py-5 justify-between items-center inline-flex">
-        <a href="/" className="text-white text-[36px] font-semibold">
-          ExploraLife
-        </a>
-        <ul className="flex gap-5">
+      <nav className="w-full px-5 py-5 justify-between items-center flex md:px-12 md:py-5">
+        <div className="flex items-center justify-between w-full ">
+          <a
+            href="/"
+            className=" text-white text-[26px] font-semibold md:text-[36px]"
+          >
+            ExploraLife
+          </a>
+          <button className="md:hidden text-3xl text-white cursor-pointer">
+            {" "}
+            <FiMenu />{" "}
+          </button>
+        </div>
+        <ul className=" gap-5 hidden md:flex">
           <li>
             <a className="text-white text-[16px] font-normal" href="/">
               Home
@@ -52,13 +61,15 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className="px-[25px] py-[13px] bg-sky-900 bg-opacity-70 rounded justify-start items-start gap-2.5 flex ">
-          <div className="text-white text-[13px] font-[Open Sans] font-semibold">Newsletter</div>
+        <button className=" hidden md:flex px-[25px] py-[13px] bg-sky-900 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
+          <div className="text-white text-[13px] font-[Open Sans] font-semibold">
+            Newsletter
+          </div>
         </button>
       </nav>
 
-      <div className="flex-col justify-center items-center gap-[11px] inline-flex h-full">
-        <h1 className="text-white text-[32px] font-semibold">
+      <div className="flex-col justify-center items-center gap-[11px] inline-flex h-full text-center">
+        <h1 className="text-white font-semibold text-2xl md:text-[32px]">
           Discover, Inspire, Explore: Your Gateway to a Life of Wonder
         </h1>
         <p className="text-white text-[16px] font-medium">

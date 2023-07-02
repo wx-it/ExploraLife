@@ -6,15 +6,20 @@ const FeaturedContent = () => {
   const breakpoints = {
     475: {
       slidesPerView: 1,
+      spaceBetween: 200,
     },
     640: {
       slidesPerView: 2,
+      spaceBetween: 200,
     },
     768: {
       slidesPerView: 3,
+      spaceBetween: 300,
+
     },
-    1024: {
+    1000: {
       slidesPerView: 4,
+      spaceBetween: 300,
     },
   };
   return (
@@ -23,7 +28,6 @@ const FeaturedContent = () => {
 
       <div className="flex justify-between items-center my-4">
         <Swiper
-          spaceBetween={100}
           breakpoints={breakpoints}
           navigation={true}
           loop={true}
