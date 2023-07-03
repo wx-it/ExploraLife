@@ -1,11 +1,11 @@
-type Article = {
+export type Article = {
   id: string;
   title: string;
   description: string;
   imageUrl: string;
 };
 
-type CategorizedArticles = {
+export type CategorizedArticles = {
   lifestyleArticles: Article[];
   travelArticles: Article[];
   wellnessArticles: Article[];
