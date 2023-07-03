@@ -2,7 +2,7 @@ import background from "/images/background.jpg";
 import { FiMenu } from "react-icons/fi";
 const Header = () => {
   return (
-    <div className="flex flex-col h-screen font-[Montserrat] ">
+    <header className="flex flex-col h-screen font-[Montserrat] ">
       <img
         className="absolute w-full h-full object-cover filter brightness-75 -z-10 sm:border sm:border-red-500"
         src={background}
@@ -76,7 +76,7 @@ const Header = () => {
           Embark on a Journey of Discovery and Inspiration
         </p>
       </div>
-    </div>
+    </header>
   );
 };
 

@@ -1,37 +1,40 @@
 import featuredContent from "../data/featuredContent";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css/navigation";
 import "swiper/css";
 const FeaturedContent = () => {
   const breakpoints = {
-    475: {
+    500: {
       slidesPerView: 1,
-      spaceBetween: 200,
+      spaceBetween: 1,
     },
     640: {
       slidesPerView: 2,
-      spaceBetween: 200,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 3,
       spaceBetween: 300,
-
     },
     1000: {
       slidesPerView: 4,
       spaceBetween: 300,
     },
   };
+
   return (
     //here
-    <div className="font-[Montserrat] h-screen flex flex-col items-center justify-center md:p-20 ">
-      <h2 className="text-sky-900 text-[24px] font-bold">FeaturedContent</h2>
+    <div className="font-[Montserrat] flex flex-col justify-center py-10 px-5 md:p-20 ">
+      <h2 className="text-sky-900 text-[24px] font-bold border-b border-orange-200 ">
+        Featured Content
+      </h2>
 
-      <div className="flex justify-between items-center my-4">
+      <div className="flex justify-center items-center my-4">
         <Swiper
           breakpoints={breakpoints}
-          navigation={true}
           loop={true}
+          centeredSlides={true}
         >
           {featuredContent.map((item) => (
             <SwiperSlide key={item.id}>
