@@ -1,7 +1,6 @@
 import featuredContent from "../data/featuredContent";
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import "swiper/css/navigation";
 import "swiper/css";
 const FeaturedContent = () => {
   const breakpoints = {
@@ -15,11 +14,11 @@ const FeaturedContent = () => {
     },
     768: {
       slidesPerView: 3,
-      spaceBetween: 300,
+      spaceBetween: 100,
     },
     1000: {
       slidesPerView: 4,
-      spaceBetween: 300,
+      spaceBetween: 150,
     },
   };
 
