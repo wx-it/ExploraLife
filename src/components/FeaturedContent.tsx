@@ -23,7 +23,8 @@ const FeaturedContent = () => {
     },
   };
   return (
-    <div className="font-[Montserrat] h-screen p-20 ">
+    //here
+    <div className="font-[Montserrat] h-screen flex flex-col items-center justify-center md:p-20 ">
       <h2 className="text-sky-900 text-[24px] font-bold">FeaturedContent</h2>
 
       <div className="flex justify-between items-center my-4">
