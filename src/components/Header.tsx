@@ -4,12 +4,12 @@ const Header = () => {
   return (
     <header className="flex flex-col h-screen font-[Montserrat] ">
       <img
-        className="absolute w-full h-full object-cover filter brightness-75 -z-10 sm:border sm:border-red-500"
+        className="absolute w-full h-full object-cover filter brightness-75 -z-10"
         src={background}
         alt=""
       />
       <nav className="w-full px-5 py-5 justify-between items-center flex md:px-12 md:py-5">
-        <div className="flex items-center justify-between w-full ">
+        <div className=" md:hidden flex items-center justify-between w-full ">
           <a
             href="/"
             className=" text-white text-[26px] font-semibold md:text-[36px]"
@@ -17,10 +17,16 @@ const Header = () => {
             ExploraLife
           </a>
           <button className="md:hidden text-3xl text-white cursor-pointer">
-            {" "}
-            <FiMenu />{" "}
+            <FiMenu />
           </button>
         </div>
+
+        <a
+          href="/"
+          className="hidden md:block text-white text-[26px] font-semibold md:text-[36px]"
+        >
+          ExploraLife
+        </a>
         <ul className=" gap-5 hidden md:flex">
           <li>
             <a className="text-white text-[16px] font-normal" href="/">
