@@ -1,4 +1,3 @@
-import background from "/images/background-1.jpg";
 
 
 const Newsletter = () => {

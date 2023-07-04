@@ -3,16 +3,19 @@ import Articles from "./components/Articles";
 import FeaturedContent from "./components/FeaturedContent";
 import Header from "./components/Header";
 import Newsletter from "./components/Newsletter";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Header />
-      <AboutUs />
-      <FeaturedContent />
-      <Articles />
-      <Newsletter />
-    </>
+    <BrowserRouter>
+      <>
+        <Header />
+        <AboutUs />
+        <FeaturedContent />
+        <Articles />
+        <Newsletter />
+      </>
+    </BrowserRouter>
   );
 }
 
