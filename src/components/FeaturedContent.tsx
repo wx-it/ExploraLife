@@ -24,7 +24,7 @@ const FeaturedContent = () => {
 
   return (
     //here
-    <div className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10 ">
+    <div className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10 scroll-start ">
       <h2 className="text-sky-900 text-[24px] font-bold border-b border-orange-200 mx-10 mb-4 ">
         Featured Content
       </h2>
