@@ -1,4 +1,4 @@
-import background from "/images/background.jpg";
+import background from "/images/background-2.jpg";
 import { FiMenu } from "react-icons/fi";
 const Header = () => {
   return (
@@ -67,8 +67,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button className=" hidden md:flex px-[25px] py-[13px] bg-sky-900 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
-          <div className="text-white text-[13px] font-[Open Sans] font-semibold">
+        <button className=" hidden md:flex px-[25px] py-[13px] bg-gray-700 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
+          <div className="text-white text-[13px] font-[Open Sans]  font-semibold">
             Newsletter
           </div>
         </button>

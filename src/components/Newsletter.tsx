@@ -1,23 +1,26 @@
+import background from "/images/background-1.jpg";
+
+
 const Newsletter = () => {
   return (
-    <div className="bg-blue-600 py-8 px-4 sm:px-8 lg:px-16">
-      <div className=" flex justify-between items-center flex-col w-full md:flex-row">
+    <div className="bg-gray-300 px-12 py-20 mt-6 ">
+      <div className=" flex justify-evenly items-center flex-col w-full md:flex-row">
         <div>
-          <h2 className="text-3xl font-[Montserrat] font-semibold text-white mb-4">
+          <h2 className="text-3xl font-[Montserrat] font-bold mb-4">
             Subscribe to Our Newsletter
           </h2>
-          <p className="text-md font-[Open Sans] font-light text-white mb-6">
+          <p className="text-md font-[Open Sans] font-light">
             Stay up to date with the latest articles, news, and updates from
             ExploraLife.
           </p>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-between gap-4 flex-col mt-4 md:m-0 md:flex-row">
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-64 sm:w-80 px-4 py-3 rounded-l-md focus:outline-none"
+            className="px-5 py-3  focus:outline-none "
           />
-          <button className="bg-white text-sky-blue-300 hover:text-white hover:bg-sky-blue-300 px-6 py-3 rounded-r-md">
+          <button className="bg-black text-white hover:text-black hover:bg-white px-6 py-3 ">
             Subscribe
           </button>
         </div>

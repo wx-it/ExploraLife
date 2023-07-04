@@ -23,7 +23,7 @@ const Articles = () => {
           <p className="font-[Open Sans] text-gray-600 mt-2 text-sm">
             {article.description}
           </p>
-          <div className="flex gap-2 items-end mt-3">
+          <div className="flex gap-2 items-end mt-3 cursor-pointer">
             <p className="text-xs font-semibold font-[Montserrat]">
               Read Article
             </p>
