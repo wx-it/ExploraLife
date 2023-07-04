@@ -10,7 +10,6 @@ const AboutUs: React.FC = () => {
           alt=""
         />
 
-        <div className="">
           <div className=" flex flex-row-reverse">
             <div className="w-[100%] md:h-screen md:px-[60px] mx-5 md:m-0 py-12 px-5  bg-white flex-col justify-center items-center gap-2.5 inline-flex md:w-[50%]">
               <div className="text-black text-[16px] font-normal">
@@ -29,7 +28,6 @@ const AboutUs: React.FC = () => {
                 share insights, and celebrate the beauty of life's experiences.
               </div>
             </div>
-          </div>
         </div>
     </div>
   );
