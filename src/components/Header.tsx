@@ -1,6 +1,13 @@
 import background from "/images/background-2.jpg";
 import { FiMenu } from "react-icons/fi";
+import { useState } from "react";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <header className="flex flex-col h-screen font-[Montserrat] scroll-start ">
       <img
@@ -16,10 +23,81 @@ const Header = () => {
           >
             ExploraLife
           </a>
-          <button className="md:hidden text-3xl text-white cursor-pointer">
+
+          <button
+            className="md:hidden text-3xl text-white cursor-pointer"
+            onClick={handleToggleMenu}
+          >
             <FiMenu />
           </button>
         </div>
+
+        {isOpen && (
+          <div
+            className={`fixed right-0 top-0 h-full w-72 bg-white shadow-lg px-4 pl-8 py-0 z-10 flex items-center transition-all transform ease-linear duration-1000 ${
+              isOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            <button
+              className="md:hidden absolute top-6 right-5 text-3xl text-black z-20 cursor-pointer"
+              onClick={handleToggleMenu}
+            >
+              <RiCloseLine />
+            </button>
+            <ul>
+              <li>
+                <a
+                  href="/"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/about"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  Featured
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  Latest
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/services"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  Contact
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/services"
+                  className="block text-gray-800 py-2 hover:text-gray-900"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </ul>
+          </div>
+        )}
 
         <a
           href="/"
