@@ -1,7 +1,7 @@
 import background from "/images/background-2.jpg";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { RiMenuLine, RiCloseLine } from "react-icons/ri";
+import { RiCloseLine } from "react-icons/ri";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 

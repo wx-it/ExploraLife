@@ -18,7 +18,10 @@ const Articles = () => {
 
   const renderArticles = (articles: Article[]) => {
     return articles.map((article: Article) => (
-      <div className=" bg-white" key={article.id}>
+      <div
+        className="bg-white pb-4 border-b border-gray-300 md:pb-0 md:border-none"
+        key={article.id}
+      >
         <img className="object-cover" src={article.imageUrl} alt="" />
         <div className="pt-4">
           <h3 className="font-[Montserrat] font-semibold"> {article.title} </h3>
@@ -38,9 +41,9 @@ const Articles = () => {
 
   return (
     <section className="py-10 w-full">
-        <h2 className="text-3xl font-semibold mb-6 text-center">
-          Latest Articles
-        </h2>
+      <h2 className="text-3xl font-semibold mb-6 text-center">
+        Latest Articles
+      </h2>
       <div className="mx-auto px-4 h-full">
         <div className="flex flex-col justify-center gap-12 h-full">
           <div className="flex items-center justify-start gap-4 border-b border-gray-300 pb-3 flex-wrap">
