@@ -27,42 +27,30 @@ const Header = () => {
         >
           ExploraLife
         </a>
-        <ul className=" gap-5 hidden md:flex">
+        <ul className=" md:gap-4 hidden md:flex">
           <li>
             <a className="text-white text-[16px] font-normal" href="/">
               Home
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/lifestyle">
-              Lifestyle
+            <a className="text-white text-[16px] font-normal" href="/">
+              About Us
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/travel">
-              Travel
+            <a className="text-white text-[16px] font-normal" href="/">
+              Featured
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/wellness">
-              Wellness
+            <a className="text-white text-[16px] font-normal" href="/">
+              Latest
             </a>
           </li>
+
           <li>
-            <a
-              className="text-white text-[16px] font-normal"
-              href="/technology"
-            >
-              Technology
-            </a>
-          </li>
-          <li>
-            <a className="text-white text-[16px] font-normal" href="/culture">
-              Culture
-            </a>
-          </li>
-          <li>
-            <a className="text-white text-[16px] font-normal" href="/contact">
+            <a className="text-white text-[16px] font-normal" href="/">
               Contact
             </a>
           </li>

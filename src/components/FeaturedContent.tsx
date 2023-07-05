@@ -4,21 +4,30 @@ import "swiper/css";
 
 const FeaturedContent = () => {
   const breakpoints = {
-    375: {
+    320: {
       slidesPerView: 1,
-      spaceBetween: 10, // Adjust the value here to add space between slides
+      spaceBetween: 0,
     },
-    640: {
+    480: {
       slidesPerView: 2,
-      spaceBetween: 100, // Adjust the value here to add space between slides
+      spaceBetween: 50,
     },
-    768: {
+    800: {
       slidesPerView: 3,
-      spaceBetween: 150, // Adjust the value here to add space between slides
+      spaceBetween: 80,
     },
+    900: { slidesPerView: 3, spaceBetween: 80 },
     1024: {
+      slidesPerView: 3,
+      spaceBetween: 200,
+    },
+    1280: {
       slidesPerView: 4,
-      spaceBetween: 200, // Adjust the value here to add space between slides
+      spaceBetween: 40,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 50,
     },
   };
 
@@ -29,11 +38,11 @@ const FeaturedContent = () => {
         Featured Content
       </h2>
 
-      <div className="flex justify-center items-center w-full my-4 px-10">
+      <div className="flex justify-center items-center w-full my-4 md:px-5">
         <Swiper
-         slidesPerView={1}
-         spaceBetween={10}
-         className="swiper-container"
+          slidesPerView={1}
+          spaceBetween={10}
+          className="swiper-container"
           breakpoints={breakpoints}
           loop={true}
           centeredSlides={true}
