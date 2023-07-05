@@ -37,11 +37,11 @@ const Articles = () => {
   };
 
   return (
-    <section className="py-10">
-      <div className="container mx-auto px-4 h-full">
+    <section className="py-10 w-full">
         <h2 className="text-3xl font-semibold mb-6 text-center">
           Latest Articles
         </h2>
+      <div className="mx-auto px-4 h-full">
         <div className="flex flex-col justify-center gap-12 h-full">
           <div className="flex items-center justify-start gap-4 border-b border-gray-300 pb-3 flex-wrap">
             <h2 className="text-[16px] font-semibold text-gray-600 ">
@@ -51,7 +51,7 @@ const Articles = () => {
                   isPending
                     ? "text-gray-600"
                     : isActive
-                    ? "text-black border-b-2 pb-3 border-black"
+                    ? "text-black md:border-b-2 pb-3 md:border-black"
                     : ""
                 }
               >
@@ -65,7 +65,7 @@ const Articles = () => {
                   isPending
                     ? "text-gray-600"
                     : isActive
-                    ? "text-black border-b-2 pb-3 border-black"
+                    ? "text-black md:border-b-2 pb-3 md:border-black"
                     : ""
                 }
               >
@@ -79,7 +79,7 @@ const Articles = () => {
                   isPending
                     ? "text-gray-600"
                     : isActive
-                    ? "text-black border-b-2 pb-3 border-black"
+                    ? "text-black md:border-b-2 pb-3 md:border-black"
                     : ""
                 }
               >
@@ -93,7 +93,7 @@ const Articles = () => {
                   isPending
                     ? "text-gray-600"
                     : isActive
-                    ? "text-black border-b-2 pb-3 border-black"
+                    ? "text-black md:border-b-2 pb-3 md:border-black"
                     : ""
                 }
               >
@@ -107,7 +107,7 @@ const Articles = () => {
                   isPending
                     ? "text-gray-600"
                     : isActive
-                    ? "text-black border-b-2 pb-3 border-black"
+                    ? "text-black md:border-b-2 pb-3 md:border-black"
                     : ""
                 }
               >

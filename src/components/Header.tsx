@@ -62,7 +62,7 @@ const Header = () => {
         </button>
       </nav>
 
-      <div className="flex-col justify-center items-center gap-[11px] inline-flex h-full text-center">
+      <div className="flex-col justify-center items-center gap-[11px] inline-flex h-full text-center mx-4 md:m-0">
         <h1 className="text-white font-semibold text-2xl md:text-[32px]">
           Discover, Inspire, Explore: Your Gateway to a Life of Wonder
         </h1>

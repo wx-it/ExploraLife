@@ -1,5 +1,7 @@
 import featuredContent from "../data/featuredContent";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
 import "swiper/css";
 
 const FeaturedContent = () => {
@@ -23,7 +25,7 @@ const FeaturedContent = () => {
     },
     1280: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
     1440: {
       slidesPerView: 4,
@@ -32,20 +34,22 @@ const FeaturedContent = () => {
   };
 
   return (
-    //here
-    <div className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10 scroll-start ">
-      <h2 className=" text-[24px] text-center font-semibold border-b border-gray-200 mx-10 mb-6 ">
+    <div className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10  ">
+      <h2 className=" text-[24px] pb-3 text-center font-semibold border-b border-gray-200 mx-10 mb-6 ">
         Featured Content
       </h2>
 
       <div className="flex justify-center items-center w-full my-4 md:px-5">
         <Swiper
-          slidesPerView={1}
-          spaceBetween={10}
           className="swiper-container"
           breakpoints={breakpoints}
           loop={true}
           centeredSlides={true}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: true,
+          }}
+          modules={[Autoplay]}
         >
           {featuredContent.map((item) => (
             <SwiperSlide key={item.id}>
