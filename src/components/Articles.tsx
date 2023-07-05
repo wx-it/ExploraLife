@@ -3,7 +3,7 @@ import articlesData, {
   Article,
 } from "../data/articlesData";
 
-import { Route, Routes, Link, NavLink } from "react-router-dom";
+import { Route, Routes, NavLink } from "react-router-dom";
 
 import { BsArrowUpRight } from "react-icons/bs";
 
@@ -43,37 +43,77 @@ const Articles = () => {
           Latest Articles
         </h2>
         <div className="flex flex-col justify-center gap-12 h-full">
-          <div className="flex items-center justify-start gap-4 border-b border-gray-300 pb-3">
-            <NavLink
-              to={"/"}
-              className={({ isActive, isPending }) =>
-                isPending ? "text-black" : isActive ? "text-black" : ""
-              }
-            >
-              <h2 className="text-[16px] font-semibold text-gray-600 ">
+          <div className="flex items-center justify-start gap-4 border-b border-gray-300 pb-3 flex-wrap">
+            <h2 className="text-[16px] font-semibold text-gray-600 ">
+              <NavLink
+                to={"/"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-gray-600"
+                    : isActive
+                    ? "text-black border-b-2 pb-3 border-black"
+                    : ""
+                }
+              >
                 Lifestyle
-              </h2>
-            </NavLink>
-            <NavLink to={"/travel"}>
-              <h2 className="text-[16px] font-semibold text-gray-600 ">
+              </NavLink>
+            </h2>
+            <h2 className="text-[16px] font-semibold text-gray-600 ">
+              <NavLink
+                to={"/travel"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-gray-600"
+                    : isActive
+                    ? "text-black border-b-2 pb-3 border-black"
+                    : ""
+                }
+              >
                 Travel
-              </h2>
-            </NavLink>
-            <NavLink to={"/wellness"}>
-              <h2 className="text-[16px] font-semibold text-gray-600 ">
+              </NavLink>
+            </h2>
+            <h2 className="text-[16px] font-semibold text-gray-600 ">
+              <NavLink
+                to={"/wellness"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-gray-600"
+                    : isActive
+                    ? "text-black border-b-2 pb-3 border-black"
+                    : ""
+                }
+              >
                 Wellness
-              </h2>
-            </NavLink>
-            <NavLink to={"/technology"}>
-              <h2 className="text-[16px] font-semibold text-gray-600 ">
+              </NavLink>
+            </h2>
+            <h2 className="text-[16px] font-semibold text-gray-600 ">
+              <NavLink
+                to={"/technology"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-gray-600"
+                    : isActive
+                    ? "text-black border-b-2 pb-3 border-black"
+                    : ""
+                }
+              >
                 Technology
-              </h2>
-            </NavLink>
-            <NavLink to={"/culture"}>
-              <h2 className="text-[16px] font-semibold text-gray-600 ">
+              </NavLink>
+            </h2>
+            <h2 className="text-[16px] font-semibold text-gray-600 ">
+              <NavLink
+                to={"/culture"}
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "text-gray-600"
+                    : isActive
+                    ? "text-black border-b-2 pb-3 border-black"
+                    : ""
+                }
+              >
                 Culture
-              </h2>
-            </NavLink>
+              </NavLink>
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
