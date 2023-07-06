@@ -2,7 +2,7 @@ import aboutUsImg from "/images/aboutus.jpg";
 
 const AboutUs: React.FC = () => {
   return (
-    <div className="w-full h-screen relative flex flex-col items-center justify-center gap-10">
+    <div id="about" className="w-full h-screen relative flex flex-col items-center justify-center gap-10">
       <h2 className="block md:hidden md:absolute top-0 text-center w-full md:my-12 font-[Montserrat] font-semibold text-2xl">
         About Us
       </h2>

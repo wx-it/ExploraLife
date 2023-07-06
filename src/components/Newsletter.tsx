@@ -1,8 +1,6 @@
-
-
 const Newsletter = () => {
   return (
-    <div className="bg-gray-300 px-12 py-20 mt-6 ">
+    <div id="newsletter" className="bg-gray-300 px-12 py-20 mt-6 ">
       <div className=" flex justify-evenly items-center flex-col w-full md:flex-row">
         <div>
           <h2 className="text-3xl font-[Montserrat] font-bold mb-4">

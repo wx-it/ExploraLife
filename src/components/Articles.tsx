@@ -18,7 +18,7 @@ const Articles = () => {
 
   const renderArticles = (articles: Article[]) => {
     return articles.map((article: Article) => (
-      <div
+      <div id="latest"
         className="bg-white pb-4 border-b border-gray-300 md:pb-0 md:border-none"
         key={article.id}
       >

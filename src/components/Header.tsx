@@ -55,7 +55,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/about"
+                  href="#about"
                   className="block text-gray-800 py-2 hover:text-gray-900"
                 >
                   About
@@ -63,7 +63,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="#featured"
                   className="block text-gray-800 py-2 hover:text-gray-900"
                 >
                   Featured
@@ -72,7 +72,7 @@ const Header = () => {
 
               <li>
                 <a
-                  href="/services"
+                  href="#latest"
                   className="block text-gray-800 py-2 hover:text-gray-900"
                 >
                   Latest
@@ -80,7 +80,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/services"
+                  href="#contact"
                   className="block text-gray-800 py-2 hover:text-gray-900"
                 >
                   Contact
@@ -89,7 +89,7 @@ const Header = () => {
 
               <li>
                 <a
-                  href="/services"
+                  href="#newsletter"
                   className="block text-gray-800 py-2 hover:text-gray-900"
                 >
                   Newsletter
@@ -112,32 +112,32 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/">
-              About Us
+            <a className="text-white text-[16px] font-normal" href="#about">
+              About
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/">
+            <a className="text-white text-[16px] font-normal" href="#featured">
               Featured
             </a>
           </li>
           <li>
-            <a className="text-white text-[16px] font-normal" href="/">
+            <a className="text-white text-[16px] font-normal" href="#latest">
               Latest
             </a>
           </li>
 
           <li>
-            <a className="text-white text-[16px] font-normal" href="/">
+            <a className="text-white text-[16px] font-normal" href="#contact">
               Contact
             </a>
           </li>
         </ul>
-        <button className=" hidden md:flex px-[25px] py-[13px] bg-gray-700 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
+        <a href="#newsletter" className=" hidden md:flex px-[25px] py-[13px] bg-gray-700 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
           <div className="text-white text-[13px] font-[Open Sans]  font-semibold">
             Newsletter
           </div>
-        </button>
+        </a>
       </nav>
 
       <div className="flex-col justify-center items-center gap-[11px] inline-flex h-full text-center mx-4 md:m-0">

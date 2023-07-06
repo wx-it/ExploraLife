@@ -34,7 +34,7 @@ const FeaturedContent = () => {
   };
 
   return (
-    <div className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10  ">
+    <div id="featured" className="font-[Montserrat] flex flex-col justify-center py-10 md:mt-10  ">
       <h2 className=" text-[24px] pb-3 text-center font-semibold border-b border-gray-200 mx-10 mb-6 ">
         Featured Content
       </h2>
