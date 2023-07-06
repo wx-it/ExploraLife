@@ -34,7 +34,7 @@ const Header = () => {
 
         {isOpen && (
           <div
-            className={`fixed right-0 top-0 h-full w-72 bg-white shadow-lg px-4 pl-8 py-0 z-10 flex items-center transition-all transform ease-linear duration-1000 ${
+            className={`fixed right-0 top-0 h-full w-60 bg-white shadow-lg px-4 pl-8 py-0 z-10 flex items-center transition-all transform ease-linear duration-1000 ${
               isOpen ? "translate-x-0" : "translate-x-full"
             }`}
           >
