@@ -22,7 +22,7 @@ const Articles = () => {
         className="bg-white pb-4 border-b border-gray-300 md:pb-0 md:border-none"
         key={article.id}
       >
-        <img className="object-cover" src={article.imageUrl} alt="" />
+        <img className="object-cover w-full h-[250px]" src={article.imageUrl} alt="" />
         <div className="pt-4">
           <h3 className="font-[Montserrat] font-semibold"> {article.title} </h3>
           <p className="font-[Open Sans] text-gray-600 mt-2 text-sm">
