@@ -8,6 +8,10 @@ const Header = () => {
   const handleToggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  function closeNav(){
+    setIsOpen(false);
+  }
   return (
     <header className="flex flex-col h-screen font-[Montserrat] scroll-start ">
       <img
@@ -49,6 +53,7 @@ const Header = () => {
                 <a
                   href="/"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   Home
                 </a>
@@ -57,6 +62,7 @@ const Header = () => {
                 <a
                   href="#about"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   About
                 </a>
@@ -65,6 +71,7 @@ const Header = () => {
                 <a
                   href="#featured"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   Featured
                 </a>
@@ -74,6 +81,7 @@ const Header = () => {
                 <a
                   href="#latest"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   Latest
                 </a>
@@ -82,6 +90,7 @@ const Header = () => {
                 <a
                   href="#contact"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   Contact
                 </a>
@@ -91,6 +100,7 @@ const Header = () => {
                 <a
                   href="#newsletter"
                   className="block text-gray-800 py-2 hover:text-gray-900"
+                  onClick={closeNav}
                 >
                   Newsletter
                 </a>
