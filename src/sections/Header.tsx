@@ -1,7 +1,8 @@
 import background from "/images/background-2.jpg";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { RiCloseLine } from "react-icons/ri";
+import Nav from "../components/Nav";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +10,7 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  function closeNav(){
+  function closeNav() {
     setIsOpen(false);
   }
   return (
@@ -36,78 +37,11 @@ const Header = () => {
           </button>
         </div>
 
-        {isOpen && (
-          <div
-            className={`fixed right-0 top-0 h-full w-60 bg-white shadow-lg px-4 pl-8 py-0 z-10 flex items-center transition-all transform ease-linear duration-1000 ${
-              isOpen ? "translate-x-0" : "translate-x-full"
-            }`}
-          >
-            <button
-              className="md:hidden absolute top-6 right-5 text-3xl text-black z-20 cursor-pointer"
-              onClick={handleToggleMenu}
-            >
-              <RiCloseLine />
-            </button>
-            <ul>
-              <li>
-                <a
-                  href="/"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  Home
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#featured"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  Featured
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#latest"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  Latest
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  Contact
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#newsletter"
-                  className="block text-gray-800 py-2 hover:text-gray-900"
-                  onClick={closeNav}
-                >
-                  Newsletter
-                </a>
-              </li>
-            </ul>
-          </div>
-        )}
+        <Nav
+          isOpen={isOpen}
+          closeNav={closeNav}
+          handleToggleMenu={handleToggleMenu}
+        />
 
         <a
           href="/"
@@ -143,7 +77,10 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <a href="#newsletter" className=" hidden md:flex px-[25px] py-[13px] bg-gray-700 bg-opacity-70 rounded justify-start items-start gap-2.5 ">
+        <a
+          href="#newsletter"
+          className=" hidden md:flex px-[25px] py-[13px] bg-gray-700 bg-opacity-70 rounded justify-start items-start gap-2.5 "
+        >
           <div className="text-white text-[13px] font-[Open Sans]  font-semibold">
             Newsletter
           </div>
