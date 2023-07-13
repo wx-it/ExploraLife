@@ -1,44 +1,7 @@
-import articlesData, {
-  CategorizedArticles,
-  Article,
-} from "../data/articlesData";
-
-import { Route, Routes, NavLink } from "react-router-dom";
-
-import { BsArrowUpRight } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
+import RenderArticles from "../components/RenderArticles";
 
 const Articles = () => {
-  const {
-    lifestyleArticles,
-    travelArticles,
-    wellnessArticles,
-    technologyArticles,
-    cultureArticles,
-  }: CategorizedArticles = articlesData;
-
-  const renderArticles = (articles: Article[]) => {
-    return articles.map((article: Article) => (
-      <div id="latest"
-        className="bg-white pb-4 border-b border-gray-300 md:pb-0 md:border-none"
-        key={article.id}
-      >
-        <img className="object-cover w-full h-[250px]" src={article.imageUrl} alt="" />
-        <div className="pt-4">
-          <h3 className="font-[Montserrat] font-semibold"> {article.title} </h3>
-          <p className="font-[Open Sans] text-gray-600 mt-2 text-sm">
-            {article.description}
-          </p>
-          <div className="flex gap-2 items-end mt-3 cursor-pointer">
-            <p className="text-xs font-semibold font-[Montserrat]">
-              Read Article
-            </p>
-            <BsArrowUpRight className="text-sm" />
-          </div>
-        </div>
-      </div>
-    ));
-  };
-
   return (
     <section className="py-10 w-full">
       <h2 className="text-3xl font-semibold mb-6 text-center">
@@ -120,22 +83,7 @@ const Articles = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 justify-center">
-            <Routes>
-              <Route path="/" element={renderArticles(lifestyleArticles)} />
-              <Route path="/travel" element={renderArticles(travelArticles)} />
-              <Route
-                path="/wellness"
-                element={renderArticles(wellnessArticles)}
-              />
-              <Route
-                path="/technology"
-                element={renderArticles(technologyArticles)}
-              />
-              <Route
-                path="/culture"
-                element={renderArticles(cultureArticles)}
-              />
-            </Routes>
+            <RenderArticles />
           </div>
         </div>
       </div>

@@ -1,9 +1,9 @@
-import AboutUs from "./components/AboutUs";
-import Articles from "./components/Articles";
+import AboutUs from "./sections/AboutUs";
+import Articles from "./sections/Articles";
 import FeaturedContent from "./sections/FeaturedContent";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Newsletter from "./components/Newsletter";
+import Footer from "./sections/Footer";
+import Header from "./sections/Header";
+import Newsletter from "./sections/Newsletter";
 import { BrowserRouter } from "react-router-dom";
 //clean up!
 
